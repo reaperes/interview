@@ -16,13 +16,17 @@ class LinkedList:
         node.next = self.head
         self.head = node
 
-    def search(self, data):
+    def __search(self, data):
         node = self.head
         while node is not None:
             if node.data == data:
-                return True
+                return node
             node = node.next
-        return False
+        return None
+
+    def search(self, data):
+        node = self.__search(data)
+        return node is not None
 
     @property
     def length(self):
@@ -41,18 +45,4 @@ class LinkedList:
             print(node.data + ' ')
             node = node.next
 
-
-linked_list = LinkedList()
-assert linked_list.is_empty() is True
-assert linked_list.length is 0
-
-linked_list.add(1)
-assert linked_list.length is 1
-
-linked_list.add(2)
-linked_list.add(3)
-linked_list.add(4)
-assert linked_list.length is 4
-assert linked_list.search(4) is True
-assert linked_list.search(5) is False
 
