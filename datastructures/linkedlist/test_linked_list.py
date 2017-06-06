@@ -29,3 +29,16 @@ class TestLinkedList(unittest.TestCase):
         self.list.add(0)
         self.assertTrue(self.list.search(0))
         self.assertFalse(self.list.search(1))
+
+    def test_remove(self):
+        self.list.add(0)
+        self.list.add(1)
+        self.list.add(2)
+        self.assertIs(3, self.list.length)
+
+        self.list.remove(999)
+        self.assertIs(3, self.list.length)
+
+        self.list.remove(2)
+        self.list.remove(1)
+        self.assertIs(1, self.list.length)

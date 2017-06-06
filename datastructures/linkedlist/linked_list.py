@@ -16,6 +16,21 @@ class LinkedList:
         node.next = self.head
         self.head = node
 
+    def remove(self, data):
+        node = self.head
+        if node is None:
+            return
+
+        if node.data == data:
+            self.head = node.next
+            return
+
+        while node.next is not None:
+            if node.next.data == data:
+                node.next = node.next.next
+                return
+            node = node.next
+
     def __search(self, data):
         node = self.head
         while node is not None:
