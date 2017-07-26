@@ -9,7 +9,7 @@ python
 * http://www.ilian.io/python-interview-question-and-answers/
 
 java
-* https://www.javatpoint.com/corejava-interview-questions
+* (11 ~ ) https://www.javatpoint.com/corejava-interview-questions
 * http://javahungry.blogspot.com/2013/06/top-25-most-frequently-asked-core-java.html
 * https://www.tutorialspoint.com/java/java_interview_questions.htm
 * http://www.journaldev.com/java-interview-questions
